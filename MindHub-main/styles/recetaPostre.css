@@ -1,0 +1,177 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Catamaran,sans-serif;
+    box-sizing: inherit;
+    padding: 15px;
+    background-color: #313d5a;
+    color: #fff;
+    height: 30px;
+   
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: Catamaran,sans-serif;
+    box-sizing: inherit;
+    padding: .5em 1em; 
+}
+
+.nav-row {
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+
+}
+
+.nav-item {
+    border: 3px solid aquamarine;
+    background-color: aquamarine;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: cursive;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-image: url("../img/pngegg.png");
+}
+
+h1{
+    display: flex;
+    color: coral;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.carnes{
+display: flex;
+justify-content: space-evenly;
+gap: 2rem;
+
+}
+
+.tarjeta {
+	display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 500px;
+    /* /filter: blur();/ */
+    background-color:rgba(255, 255, 255, 0.726);
+	justify-content: space-between;
+    align-items: center;
+    border-radius: 0.25rem;
+	padding: 1rem;
+	
+}
+
+.tarjeta img{
+	width: 300px;
+    height: 200px;
+	border-radius: 10px;
+}
+
+.textoimg{
+	color: rgba(212, 38, 7, 0.822);
+    /* margin: 10px; */
+	text-align: center;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: x-large;
+}
+
+p, ul{
+	color: #0e0d0d;
+	margin-top: 5%;
+	text-align: justify;
+	margin: 1rem;
+	
+}
+
+
+button{
+	justify-content: flex-start;
+	align-items:flex-start;
+}
+
+
+.titulo-ingredientes{
+	color: #0e0d0d;
+	font-size: medium;
+	font-weight: bold;
+}
+
+/* aca empieza el codigo del footer */
+
+.btn_social { 
+
+	width:100%; 
+	float:left; 
+	display:flex; 
+	margin:auto; 
+}
+
+.btn_social ul  { 
+
+	width:auto; 
+	margin:auto; 
+	float:left; 
+	display:block; 
+}
+
+.btn_social ul li  { 
+
+	position:relative; 
+	background:#0e0d0d; 
+	list-style:none; 
+	float:left; 
+	margin:5px; 
+	z-index:1; 
+	overflow:hidden; 
+	border-radius:3px; 
+	font-size:1.5em; 
+	text-align:center; 
+}
+
+.btn_social ul li a  { 
+
+	width:50px; 
+	height:50px; 
+	line-height:53px; 
+	display:block; 
+	text-decoration:none; 
+	color:#a39f9f; 
+	transition:.4s;
+
+}
+
+.btn_social ul li::before { 
+
+	transition:0.4s; 
+	position:absolute; 
+	content:''; 
+	width:100%; 
+	height:100%; 
+	top:90%; 
+	left:0; 
+	background:#2fcacf; 
+	z-index:-1; 
+	transform: scale(1); 
+	transition:.4s; 
+}
+
+.btn_social ul li:hover::before { transition:0.4s; top:0%; }
+.btn_social ul li a:hover       { color:#555555; }
