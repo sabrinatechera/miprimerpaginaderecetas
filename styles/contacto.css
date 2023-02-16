@@ -4,7 +4,7 @@
 }
 
 header {
-    
+
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -50,51 +50,44 @@ body {
 
 }
 
-h1 {
-    display: flex;
-    color: orange;
-    justify-content: flex-end;
-    align-items: flex-end;
-    font-size: 1cm;
-    margin-top: 20px;
-    margin-right: 250px;
-}
+
 
 
 
 /* aca realizamos la parte de la parte del parrafo  */
-section p {
+.container {
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    /* padding-left: 600px;
+    padding-top: 10px;
+    padding-bottom: 30px; */
+
+}
+
+.parrafo {
+    display: flex;
+    align-items: flex-end;
     font-size: 20px;
-    margin-left: 200px;
-    margin-right: 70px;
     color: cornsilk;
-    text-indent: 20px;
-    margin-right: 100px;
-    margin-left: 600px;
-    margin-top: 20px;
-   
+    width: 200px;
+    height: auto;
 }
 
 /* aca  realice la parte del centrado del form */
 
-section form {
-
+.form {
+    display: flex;
     color: cornsilk;
     text-indent: 15px;
-    align-items:baseline;
-    align-self: center;
-    align-content: center;
-    margin-left: 650px;
-    margin-top: 35px;
 }
 
-.label-input{
+.label-input {
     display: flex;
-    justify-content:
 
 }
-.container-label-input{
+
+.container-label-input {
     display: flex;
     flex-direction: column;
 }
@@ -167,3 +160,81 @@ section form {
     color: #555555;
 }
 
+@media screen and (min-width: 1281px) and (max-width: 1500px) {
+
+    .container {
+        padding-left: 600px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+    h1 {
+        display: flex;
+        color: orange;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-size: 1cm;
+        margin-top: 20px;
+        margin-right: 250px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1280px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-left: 150px;
+    }
+
+    .parrafo {
+        filter: blur();
+        background-color: rgba(0, 0, 0, 0.50);
+    }
+
+    h1 {
+        display: flex;
+        color: orange;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        font-size: 1cm;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+    }
+
+    .parrafo {
+        display: flex;
+        align-items: center;
+        font-size: small;
+        padding: 10px;
+        flex-direction: row;
+        filter: blur();
+        background-color: rgba(0, 0, 0, 0.50);
+    }
+    .form {
+        display: flex;
+        color: cornsilk;
+        text-indent: 10px;
+        font-size: smaller;
+    }
+
+    .header,
+    .nav-container,
+    .nav-row {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        font-size: smaller;
+        gap: 2px;
+    }
+}

@@ -60,36 +60,6 @@ h1 {
     margin: 5px 0 5px 0;
 }
 
-.section-disign {
-    display: flex;
-    gap: 5rem;
-    display: flex;
-    flex-direction: row;
-    padding: 2rem;
-    height: 400px;
-    justify-content: center;
-}
-
-.imgen {
-
-
-    width: 400px;
-
-}
-
-.parrafo {
-
-    text-align: justify;
-    font-size: 20px;
-    color: blanchedalmond;
-    text-indent: 20px;
-    filter: blur();
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 600px;
-    padding: 0.5rem;
-    margin-bottom: 0
-}
-
 
 
 /* aca empieza el codigo del footer */
@@ -158,4 +128,86 @@ h1 {
 
 .btn_social ul li a:hover {
     color: #555555;
+}
+
+
+
+@media screen and (min-width: 1281px) and (max-width: 1500px) {
+
+
+    .section-disign {
+        display: flex;
+        gap: 5rem;
+        display: flex;
+        flex-direction: row;
+        padding: 5rem;
+        height: 400px;
+        justify-content: space-evenly;
+    }
+
+    .imagen {
+        display: flex;
+        width: 400px;
+        height: 400px;
+        gap: 40px;
+    }
+
+    .parrafo {
+
+        text-align: justify;
+        font-size: 20px;
+        color: blanchedalmond;
+        text-indent: 20px;
+        filter: blur();
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 600px;
+        padding: 0.5rem;
+        margin-bottom: 0
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+
+    .section-disign {
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .parrafo {
+
+        text-align: justify;
+        font-size: 20px;
+        color: blanchedalmond;
+        text-indent: 20px;
+        filter: blur();
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 600px;
+        padding: 0.5rem;
+        margin-bottom: 0
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .section-disign {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .parrafo {
+
+        text-align: justify;
+        font-size: 20px;
+        color: blanchedalmond;
+        /* text-indent: 20px; */
+        filter: blur();
+        background-color: rgba(0, 0, 0, 0.3);  
+    }
+    .imagen {
+        display: flex;
+    }
 }
