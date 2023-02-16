@@ -49,7 +49,7 @@
 
         <form action="">
             <label for="bsucar"> <i class="fa-sharp fa-solid fa-magnifying-glass"></i> </label>
-            <input  type="text" placeholder="¿Que buscas? " name="buscar">
+            <input type="text" placeholder="¿Que buscas? " name="buscar">
         </form>
 
     </header>
@@ -100,15 +100,16 @@
             <div class="tarjeta">
 
                 <h3>¿Te imaginas que se come en la India?</h3>
-                <a href="https://directiatravel.com/viajes-india/guia/consejos/comida-tipica"
-                    target="_blank"><img class="tarjeta-imagen" src="https://directiatravel.com/public/upload/guide/2017/06/samosa.jpg"
+                <a href="https://directiatravel.com/viajes-india/guia/consejos/comida-tipica" target="_blank"><img
+                        class="tarjeta-imagen" src="https://directiatravel.com/public/upload/guide/2017/06/samosa.jpg"
                         alt="noticia de comida tipica de la india"></a>
 
                 <p class="texto">En la cocina india encontrarás todo tipo de guisos y también se utilizan mucho las
                     legumbres, el arroz y las verduras, siempre con currys o masalas. Un sabor verdaderamente exótico
                     que a veces se acompaña de chai (té), una de las bebidas estrella del país que también se sirve con
                     especias y hierbas aromáticas.</p>
-                <a class="boton-tarjeta" href="https://directiatravel.com/viajes-india/guia/consejos/comida-tipica" target="_blank">Leer más</a>
+                <a class="boton-tarjeta" href="https://directiatravel.com/viajes-india/guia/consejos/comida-tipica"
+                    target="_blank">Leer más</a>
 
             </div>
 
@@ -130,6 +131,21 @@
         </ul>
 
     </footer>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
 </body>
 
 </html>
